@@ -1,0 +1,27 @@
+{
+  "name": "LUI-3_forms-base",
+  "homepage": "https://github.com/LUI-3/forms-base",
+  "authors": [
+    "wufiii@gmail.com"
+  ],
+  "description": "Responsive front-end website framework - Forms - base component",
+  "main": "less/forms-base.router.less",
+  "keywords": [
+    "responsive",
+    "front-end",
+    "framework",
+    "website",
+    "web"
+  ],
+  "dependencies": {
+    "LUI-3_base": ">=3.0.0"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
