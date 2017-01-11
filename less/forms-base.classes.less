@@ -1,0 +1,123 @@
+// LUI2
+// FORM - CLASSNAMES
+
+
+.@{lui_class_prefix}_form when (@lui_form = true){
+	.item {
+		.lui.form.item.this();
+
+		// ITEM LABEL 
+		.label when (@lui_form_label = true){
+			.lui.form.item.label();
+		}
+
+		// STATUS
+		.status when (@lui_form_info = true){
+			.lui.form.item.status();
+		}
+
+		// INPUT 
+		.value when (@lui_form_inputs = true){
+
+			.lui.form.item.value.this();
+
+			// PREFIX
+			.lui_prefix when (@lui_form_inputs_prefix = true){
+				.lui.form.item.value.prefix();
+			}
+
+			// POSTFIX
+			.lui_postfix when (@lui_form_inputs_postfix = true) {
+				.lui.form.item.value.postfix();
+			}
+
+			// BASIC TEXT INPUTS
+			& when (@lui_form_inputs_text = true){
+				input[type="text"],
+				input[type="password"],
+				input[type="date"],
+				input[type="datetime"],
+				input[type="datetime-local"],
+				input[type="email"],
+				input[type="month"],
+				input[type="number"],
+				input[type="search"],
+				input[type="tel"],
+				input[type="time"],
+				input[type="url"],
+				input[type="week"] {
+					.lui.form.item.value.input(100%);
+				}
+
+				&.prefix input when (@lui_form_inputs_prefix = true){
+					border-radius: 0 3px 3px 0;
+				}
+
+				&.postfix input when (@lui_form_inputs_postfix = true){
+					border-radius: 3px 0 0 3px;
+				}
+			}
+
+			// TEXTAREA
+			textarea when (@lui_form_inputs_textarea = true){
+				.lui.form.item.value.textarea();
+			}
+
+			// SELECT
+			select when (@lui_form_inputs_select = true){
+				.lui.form.item.value.select();
+			}
+		}
+	}
+}
+
+
+//  CUSTOM CHECKBOXES
+//  can be used outside lui_form
+.@{lui_class_prefix}_check when (@lui_form_check = true){
+	.lui.form.item.value.check();
+}
+
+.@{lui_class_prefix}_check_list when (@lui_form_check = true){
+	.lui.form.item.value.checklist();
+}
+
+
+//  CUSTOM RADIOS
+//  can be used outside lui_form
+.@{lui_class_prefix}_radio when (@lui_form_radio = true){
+	.lui.form.item.value.radio();
+}
+
+.@{lui_class_prefix}_radio_list when (@lui_form_radio = true){
+	.lui.form.item.value.radiolist();
+}
+
+
+//  CUSTOM SELECTS
+//  custom HTML selects using jQuery
+
+/*
+.ui-selectmenu-button when (@lui_form_select_jquery = true) {
+	.lui.form.item.value.select-jquery.this();
+}
+.ui-js-dropdown when (@lui_form_select_jquery = true){
+	.lui.form.item.value.select-jquery.dropdown();
+}
+*/
+
+
+//  JQUERY DATEPICKER
+/*
+.ui-datepicker when (@lui_form_datepicker = true){
+	.lui.form.item.value.datepicker();
+}
+*/
+
+
+// JQUERY TAGSBOX
+/*
+.@{lui_class_prefix}_tagsbox when (@lui_form_tagsbox = true){
+	.lui.form.item.value.tagsbox();
+}
+*/
