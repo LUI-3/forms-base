@@ -243,7 +243,7 @@
 						color: #5a5a5a;
 					}
 				}
-				
+
 				&[readonly] {
 					cursor: text;
 				}
@@ -255,7 +255,6 @@
 				-webkit-appearance: none;
 				-moz-appearance: none;
 				appearance: none;
-				
 				width: @width;
 				min-height: @height;
 				max-width: @max-width;
@@ -300,7 +299,6 @@
 				.lui.flexbox.justify-content(flex-start);
 				.lui.flexbox.flex-wrap(wrap);
 
-				
 				& > li {
 					display: inline-block;
 					margin-right: 5px;
@@ -390,7 +388,6 @@
 				-webkit-appearance: none;
 				-moz-appearance: none;
 				appearance: none;
-				
 				width: @width;
 				height: 37px;
 				border: 1px solid #e2e2e2;
@@ -433,8 +430,7 @@
 					padding-left: 13px;
 					padding-right: 30px;
 					cursor: pointer;
-					
-					
+
 					&.ui-selectmenu-disabled {
 						background:#f7f7f7;
 						cursor: text;
@@ -442,7 +438,7 @@
 						cursor: default;
 						pointer-events: none;
 					}
-					
+
 					& > .ui-icon {
 						display: inline-block;
 						position: absolute;
@@ -451,20 +447,20 @@
 						height: 20px;
 						line-height: 20px;
 						margin-top: -10px;
-						
+
 						&:before {
 							font-family: FontAwesome;
 							content: "\f0d7";
 						}
 					}
-					
+
 					& > .ui-selectmenu-text {
 						display: block;
 						white-space: nowrap;
 						overflow: hidden;
 						text-overflow: ellipsis;
 					}
-					
+
 					&.ui-state-focus {
 						& > .ui-icon {
 							.lui.transform.rotate(180deg);
@@ -476,7 +472,7 @@
 					position: relative;
 					z-index: 20;
 					padding: 0 2px 0 0; // BORDER SPACING
-					
+
 					& > .inside {
 						position: absolute;
 
@@ -499,7 +495,7 @@
 								background: white;
 								position: relative;
 								top: -4px;
-								
+
 								& > li {
 									display: block;
 									max-width: 100%;
@@ -508,11 +504,11 @@
 									cursor: pointer;
 									white-space: normal;
 									color: #2e2e2e;
-									
+
 									&:hover {
 										background: rgba(0,0,0,0.05);
 									}
-									
+
 									.ui-state-active {
 										color: #108de6;
 									}
@@ -569,7 +565,7 @@
 						display: inline-block;
 						position: absolute;
 						top: 0;
-						
+
 						padding: 4px 6px;
 						border-radius: 3px;
 						cursor: pointer;
@@ -637,16 +633,14 @@
 				height: 30px;
 				padding-left: 30px;
 
-				// FUCKING BROWSER DEVELOPERS
-				// WHICH DECIDED TO HIDE ERRORS FOR NOT RENDERED INPUTS
-				// MUST BE RENDERED OR "REQUIRED" INPUT WONT SHOW ERROR
-				// input will become 1px dot hiding behind "before" FA icon
+				// "REQUIRED INPUT" WARNING WONT SHOW UNLESS INPUT IS RENDERED
+				// THIS WILL MAKE IT 1X1PX DOT
+				// TODO: MAKE IT NICER
 				input {
 					display: inline-block;
 					position: absolute;
 					top: 22px;
 					left: 7px;
-					
 					width: 1px;
 					height: 1px;
 					border: 0 !important;
@@ -655,8 +649,6 @@
 					outline: none;
 					background-color: transparent !important;
 					opacity: 0.0001;
-
-					// ALSO FUCK YOU FIREFOX AND YOUR DEFAULT INPUTS:
 					-webkit-appearance: none;
 					-moz-appearance: none;
 					-o-appearance:none;
@@ -752,16 +744,14 @@
 				height: 30px;
 				padding-left: 30px;
 
-				// FUCKING BROWSER DEVELOPERS
-				// WHICH DECIDED TO HIDE ERRORS FOR NOT RENDERED INPUTS
-				// MUST BE RENDERED OR "REQUIRED" INPUT WONT SHOW ERROR
-				// input will become 1px dot hiding behind "before" FA icon
+				// "REQUIRED INPUT" WARNING WONT SHOW UNLESS INPUT IS RENDERED
+				// THIS WILL MAKE IT 1X1PX DOT
+				// TODO: MAKE IT NICER
 				input {
 					display: inline-block;
 					position: absolute;
 					top: 22px;
 					left: 7px;
-					
 					width: 1px;
 					height: 1px;
 					border: 0 !important;
@@ -770,8 +760,6 @@
 					outline: none;
 					background-color: transparent !important;
 					opacity: 0.0001;
-
-					// ALSO FUCK YOU FIREFOX AND YOUR DEFAULT INPUTS:
 					-webkit-appearance: none;
 					-moz-appearance: none;
 					-o-appearance:none;
