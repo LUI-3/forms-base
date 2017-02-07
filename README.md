@@ -1,4 +1,4 @@
-[![GitHub license](http://content.github.lui-3.cz/LUI-3_logo-small.png)](//lui-3.cz/)
+[![LUI-3 logo](http://content.github.lui-3.cz/LUI-3_logo-small.png)](//lui-3.cz/)
 # Forms-base
 This repository contains `LUI-3_forms-base` component. Ideal usage for website with simple responsive forms, that dont need any javascript validation, datepickers, etc.
 
