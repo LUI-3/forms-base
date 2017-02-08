@@ -110,6 +110,17 @@
 					}
 				}
 			}
+
+			& when (@grid_print_enable = true){
+				@media print {
+					&.pnt-block {
+						.lui.form.item.label.block();
+					}
+					&.pnt-inline {
+						.lui.form.item.label.inline();
+					}
+				}
+			}
 		}
 
 		// STATUS
