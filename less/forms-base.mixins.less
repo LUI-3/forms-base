@@ -239,29 +239,12 @@
 				padding: 10px;
 				font-family: inherit;
 				font-size: 13px;
-				color: #555555;
+				color: black;
 				outline: none;
 
 				&:focus {
-					color: black;
+					//color: black;
 					border-color: #c0c0c0;
-				}
-
-				// Credit with ♥ to http://stackoverflow.com/a/13183558
-				&:focus::-webkit-input-placeholder {
-					color: #c7c7c7 !important;
-				}
-				// Firefox < 19
-				&:focus:-moz-placeholder {
-					color: #c7c7c7 !important;
-				}
-				// Firefox > 19
-				&:focus::-moz-placeholder {
-					color: #c7c7c7 !important;
-				}
-				// IE10
-				&:focus:-ms-input-placeholder {
-					color: #c7c7c7 !important;
 				}
 
 				&[disabled],
@@ -277,6 +260,10 @@
 
 				&[readonly] {
 					cursor: text;
+				}
+
+				&[disabled] {
+					.lui.user-select.none();
 				}
 			}
 
@@ -304,23 +291,6 @@
 					border-color: #c0c0c0;
 				}
 
-				// Credit with ♥ to http://stackoverflow.com/a/13183558
-				&:focus::-webkit-input-placeholder {
-					color: #c7c7c7 !important;
-				}
-				// Firefox < 19
-				&:focus:-moz-placeholder {
-					color: #c7c7c7 !important;
-				}
-				// Firefox > 19
-				&:focus::-moz-placeholder {
-					color: #c7c7c7 !important;
-				}
-				// IE10
-				&:focus:-ms-input-placeholder {
-					color: #c7c7c7 !important;
-				}
-
 				&[disabled],
 				&[readonly] {
 					background:#f7f7f7;
@@ -334,6 +304,10 @@
 
 				&[readonly] {
 					cursor: text;
+				}
+
+				&[disabled] {
+					.lui.user-select.none();
 				}
 			}
 
@@ -375,6 +349,10 @@
 					&:focus {
 						color: #5a5a5a;
 					}
+				}
+
+				&[disabled] {
+					.lui.user-select.none();
 				}
 			}
 
