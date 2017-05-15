@@ -53,3 +53,15 @@
 @lui_form_mixins_check_list:	true;
 @lui_form_mixins_radio:			true;
 @lui_form_mixins_radio_list:	true;
+
+
+// DEBUG MODE - CONFIG VALUES
+.lui_config_values when (@lui_debug = true){
+	--lui_forms-base_config: "LUI-3_forms-base/less/forms-base.config.less";
+	--lui_form: @lui_form;
+	--lui_form_info: @lui_form_info;
+	--lui_form_inputs: @lui_form_inputs;
+	--lui_form_check: @lui_form_check;
+	--lui_form_radio: @lui_form_radio;
+	--lui_form_mixins: @lui_form_mixins;
+}
