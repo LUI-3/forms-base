@@ -23,15 +23,18 @@
 		.value when (@lui_form_inputs = true){
 
 			.lui.form.item.value.this();
+			width: 100%;
 
 			// PREFIX
 			.lui_prefix when (@lui_form_inputs_prefix = true){
 				.lui.form.item.value.prefix();
+				.lui.flexbox.flex(0 1 auto);
 			}
 
 			// POSTFIX
 			.lui_postfix when (@lui_form_inputs_postfix = true) {
 				.lui.form.item.value.postfix();
+				.lui.flexbox.flex(0 1 auto);
 			}
 
 			// BASIC TEXT INPUTS
@@ -53,10 +56,14 @@
 				}
 
 				&.prefix input when (@lui_form_inputs_prefix = true){
+					width: auto;
+					.lui.flexbox.flex(1 0 auto);
 					border-radius: 0 3px 3px 0;
 				}
 
 				&.postfix input when (@lui_form_inputs_postfix = true){
+					width: auto;
+					.lui.flexbox.flex(1 0 auto);
 					border-radius: 3px 0 0 3px;
 				}
 			}
