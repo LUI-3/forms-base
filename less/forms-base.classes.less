@@ -66,6 +66,18 @@
 					.lui.flexbox.flex(1 0 auto);
 					border-radius: 3px 0 0 3px;
 				}
+
+				&.prefix-inline input when (@lui_form_inputs_prefix = true){
+					width: auto;
+					.lui.flexbox.flex(1 0 auto);
+					border-radius: 0 3px 3px 0;
+				}
+
+				&.postfix-inline input when (@lui_form_inputs_postfix = true){
+					width: auto;
+					.lui.flexbox.flex(1 0 auto);
+					border-radius: 3px 0 0 3px;
+				}
 			}
 
 			// TEXTAREA
