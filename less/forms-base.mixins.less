@@ -172,6 +172,14 @@
 					.lui.flexbox.align-content(stretch);
 					.lui.flexbox.justify-content(space-between);
 				}
+
+				&.postfix-inline,
+				&.prefix-inline {
+					position: relative;
+					.lui.flexbox.inline();
+					.lui.flexbox.align-content(stretch);
+					.lui.flexbox.justify-content(space-between);
+				}
 			}
 
 			// PREFIX
