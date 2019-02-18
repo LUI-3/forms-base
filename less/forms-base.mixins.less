@@ -163,6 +163,7 @@
 		// wraps input or select elements
 		.value {
 			.this() when (@lui_form_mixins_value = true){
+				width: 100%;
 				// INPUT WITH PREFIX OR POSTFIX - width calculated by javascript
 				// POSTFIX/PREFIX HAS ABSOLUTE POSITION
 				&.postfix,
@@ -179,6 +180,7 @@
 					.lui.flexbox.inline();
 					.lui.flexbox.align-content(stretch);
 					.lui.flexbox.justify-content(space-between);
+					width: auto;
 				}
 			}
 
